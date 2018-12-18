@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    line-height: auto;
+}
+.container {
+    width: 901px;
+    margin: 0 auto;
+}
+.site-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.site-nav li {
+    display: inline-block;
+}
+.site-nav a {
+    font-family: Playfair Display;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+}
+.site-nav a:hover, .site-nav a:focus {
+    color: rgb(3, 169, 244);
+}
+.site-nav li:first-child {
+    padding: 72px 121px 99px 0px;
+}
+.site-nav li:nth-child(2) {
+    padding: 72px 104px 99px 0px;
+}
+.site-nav li:nth-child(3) {
+    padding: 72px 95px 99px 0px;
+}
+.articles-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.articles-list-item {
+    display: inline-block;
+    width: 420px;
+    vertical-align: top;
+}
+.articles-list-item:not(:nth-child(even)) {
+    margin-right: 61px;
+}
+.articles-list-item:last-child {
+    margin-bottom: 52px;
+}
+.articles-list-item img {
+    width: 420px;
+}
+.articles-list-item img {
+    margin-bottom: 30px;
+}
+.articles-list-item div {
+    margin-bottom: 24px;
+    font-family: Ubuntu Light;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(180, 173, 158);
+}
+.articles-list-item h2 {
+    margin-bottom: 33px;
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(98, 98, 98);
+}
+.articles-list-item p {
+    font-family: Playfair Display;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(98, 98, 98);
+}
+.button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(129, 129, 129);
+    background-color: #fff;
+    font-family: Playfair Display;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    color: rgb(98, 98, 98);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 34px;
+    cursor:pointer;
+    text-align: center;
+}
+.button:hover, .button:focus {
+    color: rgb(3, 169, 244);
+}
