@@ -58,7 +58,7 @@ img {
 .site-menu li > a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 38px;
     color: var(--header-text);
@@ -67,8 +67,7 @@ img {
 }
 
 .site-menu li > a:hover, 
-.site-menu li > a:focus,
-.logo:focus, .logo:hover {
+.site-menu li > a:focus {
     color: var(--menu-hover);
 }
 
