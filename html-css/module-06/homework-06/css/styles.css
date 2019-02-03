@@ -1,0 +1,359 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    line-height: auto;
+}
+
+:root {
+    --header-text: rgb(149, 225, 211);
+    --menu-hover: rgb(243, 129, 129);
+    --textcolor51: rgb(51, 51, 51);
+    --text-color153: rgb(153, 153, 153);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*Logotype and syte navigation menu*/
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 108px;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    font-size: 30px;
+    color: var(--header-text);
+    padding: 17px 0 11px 0;
+    transition: color 200ms linear;
+}
+
+.site-menu {
+    margin: 0;
+    padding: 24px 0 0 0;
+    list-style: none;
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-menu li > a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 38px;
+    color: var(--header-text);
+    text-transform: uppercase;
+    transition: color 200ms linear;
+}
+
+.site-menu li > a:hover, 
+.site-menu li > a:focus,
+.logo:focus, .logo:hover {
+    color: var(--menu-hover);
+}
+
+.site-menu li > a::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--menu-hover);
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.site-menu li > a:hover::after {
+    opacity: 1;
+}
+
+.site-menu li > a:hover:focus {
+    opacity: 1;
+}
+
+/*Services section*/
+
+.service-title {
+    margin: 0;
+    text-align: center;
+    color: var(--textcolor51);
+}
+
+.italic {
+    padding-bottom: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: auto;
+}
+
+.capitalized {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: auto;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+
+.capitalized::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--menu-hover);
+    margin: 38px auto 0;
+}
+
+.inner-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    position: relative;
+    width: 380px;
+}
+
+.service-item h3, .service-item p {
+    padding-left: 80px;
+}
+
+.service-item h3 {
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: auto;
+    color: var(--textcolor51);
+    text-transform: uppercase;
+}
+
+.description {
+    margin: 0 0 98px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color153);
+}
+
+.service-item img {
+    position: absolute;
+    top: 2px;
+    left: 24px;
+}
+
+/*Team section*/
+
+.cap2 {
+    margin-bottom: 42px;
+}
+
+.descr-team {
+    margin: 0 auto 90px;
+    width: 980px;
+    text-align: center;
+}
+
+.inner-team {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 380px;
+    height: 624px;
+}
+
+.card-inner {
+    position: relative;
+    background-color: var(--header-text);
+    width: 380px;
+    height: 470px;
+    margin-bottom: 28px;
+}
+
+.card-image {
+    position: absolute;
+    object-fit: cover;
+    transform: translate(0, 0);
+    transition: transform 200ms linear;
+}
+
+.card-inner:hover {
+    cursor: pointer;
+}
+.card-inner:hover .card-image  {
+    transform: translate(-10px, -10px);
+}
+.card-inner:hover::after {
+    transform: translate(-10px, -10px);
+    opacity: 0.9;
+}
+
+.card-inner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+    background-image: linear-gradient(to top, rgb(252,227,138), var(--menu-hover));
+    transform: translate(0, 0);
+    opacity: 0;
+    transition: transform 200ms linear,
+                opacity 200ms linear;
+}
+
+/*Social media icons*/
+
+.socials, .social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    width: 380px;
+    height: 470px;
+    transform: translate(0, 0);
+    transition: transform 200ms linear;
+}
+
+.social-icons {
+    width: 55px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+    opacity: 0;
+    transition: opacity 200ms linear,
+                background-color 200ms linear;
+}
+
+.social-icons:not(:last-child) {
+    margin-right: 1px;
+}
+
+.socials:hover {
+    transform: translate(-10px, -10px);
+}
+
+.socials:hover .social-icons {
+    opacity: 1;
+}
+
+.social-icons:hover {
+    background-color: var(--header-text);
+}
+
+/*Names and positions of employees*/
+
+.card-name {
+    margin: 0 0 8px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--textcolor51);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-position {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color153);
+    text-align: center;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--textcolor51);
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--menu-hover);
+}
+
+/*Email form*/
+
+footer > form {
+    font-size: 0;
+}
+
+.mail-form {
+    width: 230px;
+    height: 40px;
+    border: 1px solid rgb(231, 231, 231);
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(204, 204, 204);
+    padding-left: 12px;
+}
+
+.submit {
+    padding: 0;
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: var(--header-text);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.submit:hover, .submit:focus {
+    cursor: pointer;
+}
