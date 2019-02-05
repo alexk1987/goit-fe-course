@@ -336,8 +336,12 @@ footer > form {
     font-style: italic;
     font-size: 15px;
     line-height: 24px;
-    color: rgb(204, 204, 204);
+    color: var(--textcolor51);
     padding-left: 12px;
+}
+
+.mail-form::placeholder {
+    color: rgb(204, 204, 204);
 }
 
 .submit {
