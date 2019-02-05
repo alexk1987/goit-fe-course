@@ -248,6 +248,13 @@ textarea::placeholder {
     resize: none;
     line-height: 22px;
 }
+.input-txt:valid, .input-msg:valid {
+    outline: 5px dashed green;
+}
+
+.input-txt:invalid, .input-msg:invalid {
+    outline: 5px dashed red;
+}
 
 .input-block {
     display: flex;
