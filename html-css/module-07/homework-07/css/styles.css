@@ -253,8 +253,8 @@ textarea::placeholder {
 }
 
 /*.input-txt:invalid, .input-msg:invalid {
-    outline: 5px dashed red;*/
-}
+    outline: 5px dashed red;
+}*/
 
 .input-block {
     display: flex;
