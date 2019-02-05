@@ -248,12 +248,12 @@ textarea::placeholder {
     resize: none;
     line-height: 22px;
 }
-.input-txt:valid, .input-msg:valid {
-    outline: 5px dashed green;
+.validate:valid {
+    outline: 5px solid rgba(0, 255, 0, 0.5);
 }
 
-.input-txt:invalid, .input-msg:invalid {
-    outline: 5px dashed red;
+/*.input-txt:invalid, .input-msg:invalid {
+    outline: 5px dashed red;*/
 }
 
 .input-block {
