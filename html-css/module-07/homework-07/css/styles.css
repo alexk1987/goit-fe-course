@@ -195,7 +195,7 @@ img {
     position: relative;
     min-width: 940px;
     height: 626px;
-    background-image: url(./img/Background.jpg);
+    background-image: url('/img/Background.jpg');
     background-size: cover;
 }
 
