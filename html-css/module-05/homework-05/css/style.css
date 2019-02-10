@@ -298,6 +298,7 @@ main {
     cursor: pointer;
 }
 footer {
+    width: 100vw;
     height: 88px;
     background-color: rgb(50, 50, 50);
     font-family: 'Open Sans', sans-serif;
