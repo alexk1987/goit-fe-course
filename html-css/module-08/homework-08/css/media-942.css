@@ -1,0 +1,29 @@
+@media (min-width: 942px) {
+    /*Header*/
+
+    .container {
+        width: 944px;
+        padding: 0 2px;
+    }
+
+    .header {
+        width: 100vw;
+        background-image: url('../img/head-bg-942.jpg');
+        margin-bottom: 70px;
+    }
+
+    .site-nav {
+        width: 944px;
+        padding: 0 2px;
+    }
+
+    .partners-list {
+        width: 944px;
+        padding: 0 2px;
+    }
+
+    .partner {
+        width: 220px;
+    }
+
+}

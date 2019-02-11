@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+:root {
+    --white: rgb(255, 255, 255);
+    --tomato-red: rgb(255, 78, 80);
+    --black51: rgb(51, 51, 51);
+    --grey102: rgb(102, 102, 102);
+}
+
+/*Header*/
+
+.header {
+    height: 540px;
+    background-image: url('../img/head-bg-320.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 66px;
+}
+
+.site-nav {
+    padding-top: 20px;
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 114px;
+}
+
+.login button {
+    width: 90px;
+    height: 36px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius:18px;
+    background: transparent;
+    transition: border 200ms linear;
+    font-family: serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.login button:not(:last-child) {
+    margin-right: 4px;
+}
+
+.login button:hover,
+.login button:focus {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.site-header {
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.header p {
+    margin: 0 auto;
+    width: 218px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.header-bttn {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    border: none;
+    background: var(--tomato-red);
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+/*Travel partnrs section*/
+
+.body-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 21.98px;
+    line-height: 1.2;
+    color: var(--black51);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.partner {
+    margin: 0 auto;
+    width: 218px;
+}
+
+/*Partner avatars*/
+
+.avatar {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+.avatar:hover, .avatar:focus {
+    cursor: pointer;
+}
+
+.partner1 {
+    background-image: url('../img/partners/Layer6.jpg');
+}
+
+.partner2 {
+    background-image: url('../img/partners/Layer8.jpg');
+}
+
+.partner3 {
+    background-image: url('../img/partners/Layer7.jpg');
+}
+
+.partner4 {
+    background-image: url('../img/partners/Layer10.jpg');
+}
+
+/*Avatar icons*/
+
+.avatar-icon {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 37px;
+    height: 37px;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+}
+.icon {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon1 {
+    background-color: var(--tomato-red);
+}
+
+.icon2 {
+    background-color: rgb(255, 165, 7);
+}
+
+.icon3 {
+    background-color: rgb(28, 215, 173);
+}
+
+.icon4 {
+    background-color: rgb(78, 115, 219);
+}
+
+/*Partner name*/
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13.97px;
+    line-height: 1.2;
+    color: var(--black51);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13.97px;
+    line-height: 1.2;
+    color: var(--grey102);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/*Button See other partners*/
+
+.others {
+    display: block;
+    width: 280px;
+    height: 40px;
+    background-color: var(--white);
+    border: 2px solid var(--tomato-red);
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--tomato-red);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}

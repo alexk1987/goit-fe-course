@@ -1,0 +1,79 @@
+@media (min-width: 768px) {
+
+    /*Header*/
+
+    .container {
+        width: 768px;
+    }
+
+    .header {
+        height: 700px;
+        background-image: url('../img/head-bg-768.jpg');
+        margin-bottom: 70px;
+    }
+
+    .login, .logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-nav  {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 108px;
+        width: 668px;
+        height: 112px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-header {
+        width: 520px;
+        font-size: 51.97px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        width: 492px;
+        font-size: 23.99px;
+        margin-bottom: 36px;
+    }
+
+    .header-bttn {
+        width: 226px;
+    }
+
+    /*Travel partnrs section*/
+
+    .body-title {
+        margin-bottom: 31px;
+    }
+    
+    .partners-list {
+        margin: 0 auto;
+        width: 492px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .partner {
+        margin: 0;
+        width: 236px;
+    }
+
+    .description {
+        margin-bottom: 58px;    
+    }
+
+    .others {
+        width: 192px;
+    }
+
+}
