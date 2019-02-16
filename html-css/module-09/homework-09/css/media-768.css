@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+
+    /*column grid*/
+
+    .container {
+        min-width: 768px;
+        padding: 0 0.625rem;
+    }
+    
+    .row {
+        margin: 0 -0.625rem;
+    }
+    
+    .col-md-01 {width: 8.3333%;}
+    .col-md-02 {width: 16.6666%;}
+    .col-md-03 {width: 25%;}
+    .col-md-04 {width: 33.3333%;}
+    .col-md-05 {width: 41.6666%;}
+    .col-md-06 {width: 50%;}
+    .col-md-07 {width: 58.3333%;}
+    .col-md-08 {width: 66.6666%;}
+    .col-md-09 {width: 75%;}
+    .col-md-10 {width: 83.3333%;}
+    .col-md-11 {width: 91.6666%;}
+    .col-md-12 {width: 100%;}
+    
+    [class*="col-md-"] {padding: 0 0.625rem;}
+
+    .colbreak {
+        display: block;
+        width: 100%;
+    }
+
+    /*Header*/
+
+    .header {
+        height: 700px;
+        background-image: url('../img/head-bg-768.jpg');
+        margin-bottom: 70px;
+    }
+
+    .login, .logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-nav  {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 108px;
+        width: 668px;
+        height: 112px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-header {
+        width: 520px;
+        font-size: 51.97px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        width: 492px;
+        font-size: 23.99px;
+        margin-bottom: 36px;
+    }
+
+    .header-bttn {
+        width: 226px;
+    }
+
+    /*Travel partnrs section*/
+
+    .body-title {
+        margin-bottom: 31px;
+    }
+
+    .description {
+        margin-bottom: 58px;    
+    }
+
+    .others {
+        width: 192px;
+    }
+
+}
