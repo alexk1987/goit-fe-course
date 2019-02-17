@@ -184,36 +184,23 @@ button:hover, button:focus {
     position: relative;
     width: 122px;
     height: 122px;
-    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 18px;
+}
+
+.avatar > img {
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .avatar:hover, .avatar:focus {
     cursor: pointer;
 }
 
-.partner1 {
-    background-image: url('../img/partners/Layer6.jpg');
-}
-
-.partner2 {
-    background-image: url('../img/partners/Layer8.jpg');
-}
-
-.partner3 {
-    background-image: url('../img/partners/Layer7.jpg');
-}
-
-.partner4 {
-    background-image: url('../img/partners/Layer10.jpg');
-}
-
 /*Avatar icons*/
 
 .avatar-icon {
-    content: '';
     position: absolute;
     right: 0;
     bottom: 0;
