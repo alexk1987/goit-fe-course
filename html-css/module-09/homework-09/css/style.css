@@ -51,6 +51,8 @@ button:hover, button:focus {
     display: none;
 }
 
+/*Variables*/
+
 :root {
     --white: rgb(255, 255, 255);
     --tomato-red: rgb(255, 78, 80);
