@@ -1,0 +1,20 @@
+.container {
+    @extend %centre;
+    width: $container-width;
+    padding: 0 $container-side-padding;
+}
+
+.row {
+    @include flex-row;
+    margin: 0 (-$container-side-padding);
+}
+
+@for $i from 01 through 12 {
+    @if $i < 10 {
+        .col-xl-0#{$i} {width: $i / 12 * 100% - $gutter;}
+    }   @else {
+            .col-xl-#{$i} {width: $i / 12 * 100% - $gutter;}
+    }
+}
+
+[class*="col-xl-"] {margin: 0 $container-side-padding;}

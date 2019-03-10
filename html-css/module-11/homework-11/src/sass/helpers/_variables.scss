@@ -1,0 +1,23 @@
+$container-width: 1200px;
+$container-side-padding: 0.83333%;
+$gutter: $container-side-padding * 2;
+
+$main-gradient-color1: rgba(252, 227, 138, 0.9);
+$main-gradient-color2: rgba(243, 129, 129, 0.9);
+
+$primary-accent-color: rgb(252, 227, 138);
+$secondary-accent-color: rgb(243, 129, 129);
+
+$primary-light-text-color: rgb(255, 255, 255);
+$primary-dark-text-color: rgb(51, 51, 51);
+$secondary-dark-text-color: rgb(153, 153, 153);
+
+$primary-light-color: rgb(255, 255, 255);
+
+$primary-fill-color: rgb(149, 225, 211);
+
+/* Social icons' names and dementions */
+
+$icons: facebook, twitter, pinterest, instagram;
+$widths: 13px, 26px, 21px, 26px;
+$heights: 26px, 22px, 26px, 26px;

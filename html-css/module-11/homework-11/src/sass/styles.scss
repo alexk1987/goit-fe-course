@@ -1,0 +1,21 @@
+/*
+   Import partials below
+*/
+@import 'fonts';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'normalize';
+@import 'base.scss';
+@import 'helpers/placeholders';
+
+/* Components */
+
+@import 'components/column-grid';
+@import 'components/header';
+@import 'components/page-navigation';
+@import 'components/page-title';
+@import 'components/services-title';
+@import 'components/services-list';
+@import 'components/team-title';
+@import 'components/team-list';
+@import 'components/footer';

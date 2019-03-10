@@ -1,0 +1,26 @@
+.services__pre-title {
+    @include font-def($f-family:('Kaushan Script', serif),
+                      $f-size: 24px, 
+                      $color: $primary-dark-text-color);
+    @extend %text-centre;
+    margin-bottom: 16px;
+}
+
+.services__title {
+    @include font-def($f-size: 30px, 
+                      $f-weight: 700, 
+                      $color: $primary-dark-text-color);
+    @extend %uppercase;
+    @extend %text-centre;
+    margin-bottom: 74px;
+
+    &::after {
+        display: block;
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: $secondary-accent-color;
+        @extend %centre;
+        margin-top: 40px;
+    }
+}

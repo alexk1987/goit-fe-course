@@ -1,0 +1,38 @@
+.page-header {            
+    height: 62.5rem;
+    margin-bottom: 46px;
+    background: linear-gradient(to top, $main-gradient-color1, $main-gradient-color2),
+                url('../images/background/bg-pic.jpg');
+    background: linear-gradient(to top, $main-gradient-color1, $main-gradient-color2),
+                url('../images/background/bg-pic.webp');
+    /* @extend %bg-pic-position; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-resolution: 192dpi), 
+       (min-resolution: 2dppx) {
+    .page-header {
+        background: linear-gradient(to top, $main-gradient-color1, $main-gradient-color2),
+                    url('../images/background/bg-pic@2x.jpg');
+        background: linear-gradient(to top, $main-gradient-color1, $main-gradient-color2),
+                    url('../images/background/bg-pic@2x.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-resolution: 288dpi), 
+       (min-resolution: 3dppx) {
+    .page-header {
+        background: linear-gradient(to top, $main-gradient-color1, $main-gradient-color2),
+                    url('../images/background/bg-pic@3x.jpg');
+        background: linear-gradient(to top, $main-gradient-color1, $main-gradient-color2),
+                    url('../images/background/bg-pic@3x.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

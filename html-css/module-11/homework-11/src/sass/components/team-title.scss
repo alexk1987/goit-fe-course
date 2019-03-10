@@ -1,0 +1,42 @@
+/* .team {
+    @include flex-row('center');
+}
+ */
+.team__pre-title {
+    @include font-def($f-family:('Kaushan Script', serif),
+                      $f-size: 24px, 
+                      $color: $primary-dark-text-color);
+    @extend %text-centre;
+    margin-bottom: 16px;
+}
+
+.team__title {
+    @include font-def($f-size: 30px, 
+                      $f-weight: 700, 
+                      $color: $primary-dark-text-color);
+    @extend %uppercase;
+    @extend %text-centre;
+    margin-bottom: 46px;
+
+    &::after {
+        display: block;
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: $secondary-accent-color;
+        @extend %centre;
+        margin-top: 40px;
+    }
+}
+
+.team__description {
+    min-height: 130px;
+    @include font-def($f-family: ('Roboto', sans-serif),
+                      $f-size: 15px,
+                      $l-height: 24px,
+                      $color: $secondary-dark-text-color);
+    /* @extend %centre; */
+    margin-left: auto;
+    margin-right: auto;
+    @extend %text-centre;
+}

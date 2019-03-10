@@ -1,0 +1,35 @@
+.pre-page-title {
+    @include font-def($f-family:('Kaushan Script', serif),
+                      $f-size: 72px, 
+                      $color: $primary-light-text-color);
+    @extend %text-centre;
+    margin-bottom: 38px;
+}
+
+.page-title {
+    @include font-def($f-size: 150px, 
+                      $f-weight: 700, 
+                      $l-height: 0.9, 
+                      $l-spacing: -0.02em, 
+                      $color: $primary-light-text-color);
+    @extend %uppercase;
+    @extend %text-centre;
+    margin: 0 0 120px 0;
+}
+
+.page-btn-learnmore {
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    border: 3px solid $primary-light-color;
+    background: transparent;
+    @include font-def($f-weight: 700,
+                      $color: $primary-light-text-color);
+    @extend %centre;
+    @extend %uppercase;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}

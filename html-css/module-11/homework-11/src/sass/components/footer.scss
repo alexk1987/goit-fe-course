@@ -1,0 +1,55 @@
+.footer {
+    height: 62px;
+    border-top: 1px solid $secondary-dark-text-color;
+
+    &__copyright {
+        @include font-def($f-weight: 600);
+        line-height: 62px;
+
+        &--link {
+            @extend %link;
+            color: $secondary-accent-color;
+        }
+    }
+
+    &__form {
+        font-size: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+    }
+
+    &__email-input {
+        @include font-def($f-weight: 600);
+        width: 230px;
+        height: 40px;
+        border-top: 1px solid $secondary-dark-text-color;
+        border-bottom: 1px solid $secondary-dark-text-color;
+        border-left: 1px solid $secondary-dark-text-color;
+        border-right: none;
+        padding-left: 12px;
+
+        &::placeholder {
+            @include font-def($f-family: ('Roboto', sans-serif), 
+                              $f-size: 15px, 
+                              $f-style: italic, 
+                              $l-height: 24px, 
+                              $color: $secondary-dark-text-color);
+        }
+    }
+
+    &__email-submit {
+        width: 150px;
+        height: 40px;
+        @include font-def($f-weight: 700, 
+                          $color: $primary-light-color);
+        @extend %uppercase;
+        background-color: $primary-fill-color;
+        border: none;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+}

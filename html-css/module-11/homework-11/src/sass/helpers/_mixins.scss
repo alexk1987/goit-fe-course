@@ -1,0 +1,51 @@
+/* Creates flex container with row direction and 
+    variable justify-content options */
+
+@mixin flex-row($justify: 'between') {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @if $justify == 'between' {
+        justify-content: space-between;
+    }   @else if $justify == 'center' {
+        justify-content: center;
+    }   @else if $justify == 'around' {
+        justify-content: space-around;
+    }   @else if $justify == 'evenly' {
+        justify-content: space-evenly;
+    }   @else if $justify == 'start' {
+        justify-content: flex-start;
+    }   @else if $justify == 'end' {
+        justify-content: flex-end;
+    }
+}
+
+/* Generates main text decorations */
+
+@mixin font-def($f-family: ('Montserrat', sans-serif), 
+                $f-size: 14px, 
+                $f-style: normal, 
+                $f-weight: 400, 
+                $l-height: 1.2, 
+                $l-spacing: normal, 
+                $color: $primary-dark-text-color) {
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    line-height: $l-height;
+    letter-spacing: $l-spacing;
+    color: $color;
+}
+
+/* Generates icon's width and height using lists of
+ icon names, icon widths and heights from variables.scss*/
+
+@mixin generate-icon-size ($general-class, $icon-list, $icon-width, $icon-height) {
+    @for $i from 1 through length($icons) {
+        .#{$general-class}#{nth($icon-list, $i)} {
+            width: nth($icon-width, $i);
+            height: nth($icon-height, $i);
+        }
+    }
+}

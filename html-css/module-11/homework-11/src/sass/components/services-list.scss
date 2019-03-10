@@ -1,0 +1,47 @@
+.services-list {
+    @extend %list;
+
+    &__item {
+        position: relative;
+
+        &:not(:nth-last-child(-n + 3)) {
+            margin-bottom: 56px;
+        }
+        
+        &:nth-last-child(-n + 3) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        @include font-def($f-weight: 600);
+        @extend %uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__description {
+        @include font-def($f-family: ('Roboto', sans-serif),
+                          $f-size: 15px,
+                          $l-height: 24px,
+                          $color: $secondary-dark-text-color);
+        min-height: 80px;
+}
+
+    &__description,
+    &__title {
+        padding-left: 5rem;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 2px;
+        left: 24px;
+        width: 32px;
+        height: 32px;
+        fill: $primary-fill-color;
+    }
+}
+
+
+
+
