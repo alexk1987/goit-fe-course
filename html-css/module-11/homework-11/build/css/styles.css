@@ -599,8 +599,6 @@ img {
   height: 62.5rem;
   margin-bottom: 46px;
   background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url("../images/background/bg-pic.jpg");
-  background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url("../images/background/bg-pic.webp");
-  /* @extend %bg-pic-position; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1071,7 +1069,6 @@ img {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-header {
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url("../images/background/bg-pic@2x.jpg");
-    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url("../images/background/bg-pic@2x.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1081,7 +1078,6 @@ img {
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .page-header {
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url("../images/background/bg-pic@3x.jpg");
-    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url("../images/background/bg-pic@3x.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
